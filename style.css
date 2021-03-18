@@ -35,13 +35,13 @@ table {
     border:solid black 1px;
     border-radius:6px;
     table-layout: fixed;
-    width: 400px;
+    width: 800px;
 }
 
 td, th {
     border-left:solid grey 1px;
     border-top:solid grey 1px;
-    width: 100px;
+    width: 200px;
 }
 
 th {
