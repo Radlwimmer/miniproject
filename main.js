@@ -40,18 +40,63 @@ function outputData(person) {
   cell_4.innerHTML = person.day + ' ' + person.month + ' 2011';
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
-  // Add a class to actors
+  // Add classes to different professions
+  if ((new RegExp(/musician|singer|composer|pianist/gi)).test(person.profession)) {
+    row.classList.add('musician');
+  }
   if ((new RegExp(/actor|actress/gi)).test(person.profession)) {
     row.classList.add('actor');
   }
-  // Add a class to Austrians
+  if ((new RegExp(/politician|prince|prinz|president/gi)).test(person.profession)) {
+    row.classList.add('politician');
+  }
+  if ((new RegExp(/author|writer/gi)).test(person.profession)) {
+    row.classList.add('author');
+    // Add classes to different months
+  }
+  if ((new RegExp(/January/gi)).test(person.month)) {
+    row.classList.add('January');
+  }
+  if ((new RegExp(/February/gi)).test(person.month)) {
+    row.classList.add('Febuary');
+  }
+  if ((new RegExp(/March/gi)).test(person.month)) {
+    row.classList.add('March');
+  }
+  if ((new RegExp(/April/gi)).test(person.month)) {
+    row.classList.add('April');
+  }
+  if ((new RegExp(/May/gi)).test(person.month)) {
+    row.classList.add('May');
+  }
+  if ((new RegExp(/June/gi)).test(person.month)) {
+    row.classList.add('June');
+  }
+  if ((new RegExp(/July/gi)).test(person.month)) {
+    row.classList.add('July');
+  }
+  if ((new RegExp(/August/gi)).test(person.month)) {
+    row.classList.add('August');
+  }
+  if ((new RegExp(/September/gi)).test(person.month)) {
+    row.classList.add('September');
+  }
+  if ((new RegExp(/Oktober/gi)).test(person.month)) {
+    row.classList.add('Oktober');
+  }
+  if ((new RegExp(/November/gi)).test(person.month)) {
+    row.classList.add('November');
+  }
+  if ((new RegExp(/December/gi)).test(person.month)) {
+    row.classList.add('December');
+  }
+
+
+
   if ((new RegExp(/austria/gi)).test(person.profession)) {
     row.classList.add('austrian');
   }
-  // Add a class to Auto*
-  if ((new RegExp(/author/gi)).test(person.profession)) {
-    row.classList.add('auto');
-  }
+
 
 }
 
