@@ -57,11 +57,11 @@ function outputData(person) {
 
 // The below function will get called when the window finishes loading our data
 window.onload = function() {
-  // Get all buttons from our index.html
-  var buttons = document.getElementsByTagName('button');
-  // Add an event listener for the mouse click on these buttons to call the below toggleRows() function
-  for (var i = 0, length = buttons.length; i < length; i++) {
-    buttons[i].addEventListener('click', toggleRows, false);
+  // Get all options from our index.html
+  var options = document.getElementsByTagName('option');
+  // Add an event listener for the mouse click on these options to call the below toggleRows() function
+  for (var i = 0, length = options.length; i < length; i++) {
+    options[i].addEventListener('click', toggleRows, false);
   }
 
   // This function is responsible for toggling the relevant rows visible/hidden
@@ -70,14 +70,14 @@ window.onload = function() {
     var tableRows = document.getElementsByTagName('tr');
     // Loop through all of those rows (i.e.: <tr>...</tr> elements)
     for (var i = 1, length = tableRows.length; i < length; i++) {
-      // If the button's value is reset show all table rows. "table-row" is here a CSS style attribute for visible rows!
+      // If the option's value is reset show all table rows. "table-row" is here a CSS style attribute for visible rows!
       if (this.value == 'reset') {
         tableRows[i].style.display = "table-row";
-      // If the button's value (for example "austrian") is included in the CSS classes of the table row (for example <tr class="austrian actor">...</tr>) then show it
+      // If the option's value (for example "austrian") is included in the CSS classes of the table row (for example <tr class="austrian actor">...</tr>) then show it
       } else if (tableRows[i].classList.contains(this.value)) {
         tableRows[i].style.display = "table-row";
       } else {
-      // If not hide this row, meaning that this row is not matched by the selected button
+      // If not hide this row, meaning that this row is not matched by the selected option
         tableRows[i].style.display = "none";
       }
     }
