@@ -91,26 +91,7 @@ function outputData(person) {
   if ((new RegExp(/December/gi)).test(person.month)) {
     row.classList.add('December');
   }
-// Add classes to different countries
 
-  if ((new RegExp(/americ/gi)).test(person.profession)) {
-    row.classList.add('American');
-  }
-  if ((new RegExp(/engl|brit/gi)).test(person.profession)) {
-    row.classList.add('Great Britain');
-  }
-  if ((new RegExp(/iran/gi)).test(person.profession)) {
-    row.classList.add('Iran');
-  }
-  if ((new RegExp(/scott/gi)).test(person.profession)) {
-    row.classList.add('Scottland');
-  }
-  if ((new RegExp(/german/gi)).test(person.profession)) {
-    row.classList.add('Germany');
-  }
-  if ((new RegExp(/france|french/gi)).test(person.profession)) {
-    row.classList.add('France');
-  }
 
 
 }
