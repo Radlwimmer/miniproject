@@ -122,10 +122,10 @@ window.onload = function() {
   // Add an event listener for the mouse click on these options to call the below toggleRows() function
   for (var i = 0, length = options.length; i < length; i++) {
     options[i].addEventListener('click', toggleRows, false);
-  var buttons = document.getElementsByTagName('button');
+  var button = document.getElementsByTagName('button');
     // Add an event listener for the mouse click on these buttons to call the below toggleRows() function
-  for (var i = 0, length = buttons.length; i < length; i++) {
-      buttons[i].addEventListener('click', toggleRows, false);
+  for (var i = 0, length = button.length; i < length; i++) {
+      button[i].addEventListener('click', toggleRows, false);
   }
 
   // This function is responsible for toggling the relevant rows visible/hidden
