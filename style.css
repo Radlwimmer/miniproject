@@ -30,15 +30,16 @@ button {
 
 table {
     margin-top: 30px;
-    border-collapse:separate;
     border:solid black 1px;
     border-radius:6px;
-    -moz-border-radius:6px;
+    table-layout: fixed;
+    width: 300px;
 }
 
 td, th {
     border-left:solid grey 1px;
     border-top:solid grey 1px;
+    width: 100px;
 }
 
 th {
