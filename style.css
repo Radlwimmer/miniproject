@@ -52,6 +52,7 @@ td, th {
 }
 
 th {
-    background-color: lightgrey;
+    color: white;
+    background-color: grey;
     border-top: none;
 }
