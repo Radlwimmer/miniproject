@@ -36,8 +36,8 @@ table {
 }
 
 td, th {
-    border-left:solid black 1px;
-    border-top:solid black 1px;
+    border-left:solid grey 1px;
+    border-top:solid grey 1px;
 }
 
 th {
