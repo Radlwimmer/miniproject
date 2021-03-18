@@ -24,20 +24,9 @@ body {
 button {
   font-size: 16px;
   padding: 8px;
-}
-
-.redButton{
-  background-color: pink;
-}
-.greenButton{
-  background-color: lightgreen;
-}
-.blueButton{
   background-color: lightblue;
 }
-.yellowButton{
-  background-color: lightyellow;
-}
+
 
 table {
     margin-top: 30px;
