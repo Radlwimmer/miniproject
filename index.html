@@ -10,11 +10,21 @@
   </head>
   <body>
     <h1>Deaths of 2011</h1>
-    <p>This website uses a list of names extracted from Wikipedia.</p>
-    <p>The data which is fetched can be seen here: <a href="data/deaths.json" target="_blank">data/deaths.json</a></p>
-    <p>See the JavaScript code which fetches and outputs the data here: <a href="main.js" target="_blank">main.js</a></p>
+    <p>This website uses a list of names extracted from Wikipedia.<br>
+    The data which is fetched can be seen here: <a href="data/deaths.json" target="_blank">data/deaths.json</a> <br>
+    See the JavaScript code which fetches and outputs the data here: <a href="main.js" target="_blank">main.js</a></p>
     <p>Please use the below buttons to interactively filter the data.</p>
-    <button type="button" value="actor" class="redButton">Actors</button>
+
+
+    <select name="Profession" id="Profession">
+      <option value="" disabled selected>Choose a profession</option>
+      <option value="musician">musician</option>
+      <option value="actor" type="button" class="redButton">actor</option>
+      <option value="politician">politician</option>
+      <option value="author">author</option>
+    </select>
+
+    
     <button type="button" value="austrian" class="greenButton">Austrians</button>
     <button type="button" value="auto" class="yellowButton">Author</button>
     <button type="reset" value="reset" class="blueButton">Reset</button>
