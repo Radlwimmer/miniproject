@@ -41,15 +41,15 @@ function outputData(person) {
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
-  if ((new RegExp(/schauspieler/gi)).test(person.profession)) {
+  if ((new RegExp(/actor|actress/gi)).test(person.profession)) {
     row.classList.add('actor');
   }
   // Add a class to Austrians
-  if ((new RegExp(/österreich/gi)).test(person.profession)) {
+  if ((new RegExp(/austrian/gi)).test(person.profession)) {
     row.classList.add('austrian');
   }
   // Add a class to Auto*
-  if ((new RegExp(/auto/gi)).test(person.profession)) {
+  if ((new RegExp(/author/gi)).test(person.profession)) {
     row.classList.add('auto');
   }
 
